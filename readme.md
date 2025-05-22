@@ -1,4 +1,4 @@
-# Execution 
+# Running the Program 
 
 ## To run, select the main.py file and execute it
 
