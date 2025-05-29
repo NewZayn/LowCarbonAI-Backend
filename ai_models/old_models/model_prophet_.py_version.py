@@ -15,6 +15,7 @@ try:
     logging.info("Carregando dados...")
     df = pd.read_csv("./gpu_data.csv", parse_dates=['timestamp'], index_col='timestamp')
     df = df.asfreq('h')
+    df.head()
     
     logging.info(f"Shape do DataFrame: {df.shape}")
     logging.info(f"Colunas: {df.columns.tolist()}")
@@ -59,8 +60,8 @@ try:
     logging.info("Criando modelo Prophet...")
     model = Prophet(
         seasonality_mode='multiplicative',  
-        changepoint_prior_scale=10,  
-        seasonality_prior_scale=100,
+        changepoint_prior_scale=0.01,  
+        seasonality_prior_scale=10,
         mcmc_samples=0  
     )
     

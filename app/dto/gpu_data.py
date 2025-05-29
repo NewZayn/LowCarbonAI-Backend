@@ -7,9 +7,9 @@ class GPUData(BaseModel):
     timestamps: List[int]
     gpu_util: List[float] = Field(..., alias="gpuUtil")
     mem_util: Optional[List[float]] = Field(None, alias="memUtil")
-    power: Optional[List[float]] = None
-    temperature: Optional[List[float]] = None
-    
+    power: Optional[List[float]] = Field(None, alias="power")
+    temperature: Optional[List[float]] = Field(None, alias="temperature")
+
     class Config:
         allow_population_by_field_name = True
-        populate_by_name = True  # Para versões mais recentes do Pydantic
+        populate_by_name = True  
