@@ -6,6 +6,8 @@ Esta API tem o objetivo de gerar previsões baseadas em modelos estatísticos tr
 
 - Python 3.8 ou superior
 
+---
+
 É recomendado criar um ambiente virtual para gerenciar as dependências:
 
 ```bash
