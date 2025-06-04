@@ -4,7 +4,15 @@ Esta API tem o objetivo de gerar previsões baseadas em modelos estatísticos tr
 
 ### Pré-requisitos
 
-* Python 3.8+
+- Python 3.8 ou superior
+
+É recomendado criar um ambiente virtual para gerenciar as dependências:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # No Windows use `.venv\Scripts\activate`
+pip install -r requirements.txt
+
 
 ### Execução
 
