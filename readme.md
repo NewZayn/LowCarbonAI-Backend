@@ -2,6 +2,8 @@
 
 Esta API tem o objetivo de gerar previsões baseadas em modelos estatísticos treinados, utilizando o Prophet, uma biblioteca para análise e previsão de séries temporais. Ela recebe métricas históricas de uso computacional, processa esses dados e retorna previsões sobre a utilização futura da GPU, auxiliando na redução da pegada de carbono através do monitoramento eficiente dos recursos.
 
+## Execução : 
+
 ### Pré-requisitos
 
 - Python 3.8 ou superior
@@ -14,7 +16,7 @@ Esta API tem o objetivo de gerar previsões baseadas em modelos estatísticos tr
 python -m venv .venv
 source .venv/bin/activate  # No Windows use `.venv\Scripts\activate`
 pip install -r requirements.txt
-
+```
 
 ### Execução
 
